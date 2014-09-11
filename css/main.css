@@ -1,0 +1,272 @@
+/* BOILERPLATE */
+button,html,input,select,textarea{color:#222}html{font-size:1em;line-height:1.4}::-moz-selection{background:#b3d4fc;text-shadow:none}::selection{background:#b3d4fc;text-shadow:none}hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}audio,canvas,img,video{vertical-align:middle}fieldset{border:0;margin:0;padding:0}textarea{resize:vertical}
+
+/* GENERAL */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    color: #333;
+    font-family: "ff-tisa-web-pro", serif;
+    line-height: 1.5;
+    background: url(../images/tushar.jpg) no-repeat fixed;
+    -webkit-font-smoothing: antialiased;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.container:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+img {
+    height: 100%;
+    max-width: 100%;
+}
+
+
+
+/* TYPOGRAPHY */
+h1, h2, h3, h4, h5, h6 {
+    font-family: "brandon-grotesque", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*NAVBAR*/
+.navbar {
+    width: 100%;
+    padding: 24px 0 16px;
+    position: fixed;
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+    z-index: 9999;
+}
+
+.navbar h1 {
+    margin: 0;
+    font-size: 20px;
+    text-transform: uppercase;
+    line-height: 27px;
+}
+
+.navbar h1 a {
+    color: #ababab;
+}
+
+.navbar h1 a:hover {
+    color: #fd8a61;
+}
+
+.navbar ul {
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+
+.navbar ul li {
+    display: inline;
+    list-style-type: none;
+}
+
+.navbar ul li a {
+    display: inline-block;
+}
+
+.navbar ul li a svg {
+    width: 18px;
+}
+
+.navbar ul li a svg:hover path {
+    fill: #fd8a61;
+}
+
+.navbar ul li:first-child a svg {
+    margin-right: 10px;
+}
+
+
+.first-section {
+    padding: 176px 0 110px;
+    background: transparent;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+.first-section h2 {
+    margin: 0 0 16px;
+    font-size: 35px;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+
+.first-section p {
+    margin: 0 auto 32px;
+    max-width: 750px;
+    color: #777;
+    font-size: 20px;
+}
+
+.first-section a {
+    padding: 12px 25px 10px;
+    display: inline-block;
+    color: #00c09e;
+    border: 2px solid #00c09e;
+    font-family: "brandon-grotesque", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.first-section a:hover {
+    color: #f9f9f9;
+    background-color: #00c09e;
+}
+
+.first-section a img {
+
+}
+
+/* SECTIONS */
+
+.projects h2, .testimonial h2 {
+    margin: 0 0 19px;
+    color: #777;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+.divider {
+    margin: 0 auto;
+    width: 40px;
+    height: 3px;
+    border: 0;
+}
+
+.blue {
+    background-color: #00c09e;
+}
+
+.white {
+    background-color: #fff;
+}
+
+
+/* TESTIMONIAL */
+
+.testimonial {
+    padding: 80px 0;
+    border-top: 1px solid #EEE;
+    text-align: center;
+}
+
+.testimonial blockquote {
+    margin: 28px 0 0;
+    color: #777;
+    font-size: 25px;
+    font-style: italic;
+}
+
+.testimonial blockquote p {
+    margin: 0;
+}
+
+.testimonial blockquote cite {
+    margin-top: 18px;
+    display: inline-block;
+    color: #ababab;
+    font-family: "brandon-grotesque", sans-serif;
+    font-size: 22px;
+    font-style: normal;
+}
+.testimonial blockquote cite a{
+    color: #00c09e;
+    text-decoration: underline;
+}
+.testimonial blockquote cite a:hover{
+    text-decoration: none;
+}
+/* HIRE */
+
+.hire {
+    padding: 80px 0;
+    background-color: #f9f9f9;
+    border-top: 1px solid #eee;
+    text-align: center;
+}
+
+.hire h3 {
+    margin: 0;
+    color: #777;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.hire h3 a {
+    color: #00c09e;
+    text-decoration: underline;
+}
+
+.hire h3 a:hover {
+   text-decoration: none;
+}
+
+/* FOOTER */
+footer {
+    padding: 21px 0 25px;
+    background-color: #fff;
+    border-top: 1px solid #eee;
+}
+
+footer p {
+    margin: 0;
+    color: #ababab;
+    font-weight: 400;
+}
+
+.made {
+    float: right;
+}
+
+/* ANIMATIONS */
+a, div, path {
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+
+ /*MEDIA QUERIES */
+
+ @media screen and (max-device-width : 320px) {
+    .opl {
+        position: absolute;
+    }
+
+    .tile {
+        width: 240px;
+        height: 240px;
+    }
+
+    footer p {
+        text-align: center;
+    }
+
+    .made {
+        display: none;
+        visibility: hidden;
+    }
+ }
