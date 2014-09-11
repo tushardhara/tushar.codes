@@ -10,7 +10,7 @@ button,html,input,select,textarea{color:#222}html{font-size:1em;line-height:1.4}
 
 body {
     color: #333;
-    font-family: "ff-tisa-web-pro", serif;
+    font-family: 'Roboto', sans-serif;
     line-height: 1.5;
     background: url(../images/tushar.jpg) no-repeat fixed;
     -webkit-font-smoothing: antialiased;
@@ -36,9 +36,6 @@ img {
 
 
 /* TYPOGRAPHY */
-h1, h2, h3, h4, h5, h6 {
-    font-family: "brandon-grotesque", sans-serif;
-}
 
 a {
     text-decoration: none;
@@ -85,16 +82,14 @@ a {
 }
 
 .navbar ul li a svg {
-    width: 18px;
+    width: 20px;
 }
 
 .navbar ul li a svg:hover path {
-    fill: #fd8a61;
+    fill: #00c09e;
 }
 
-.navbar ul li:first-child a svg {
-    margin-right: 10px;
-}
+
 
 
 .first-section {
@@ -122,9 +117,8 @@ a {
 .first-section a {
     padding: 12px 25px 10px;
     display: inline-block;
-    color: #00c09e;
+    color: #f9f9f9;
     border: 2px solid #00c09e;
-    font-family: "brandon-grotesque", sans-serif;
     font-size: 18px;
     font-weight: 700;
     text-transform: uppercase;
@@ -141,7 +135,7 @@ a {
 
 /* SECTIONS */
 
-.projects h2, .testimonial h2 {
+.testimonial h2 {
     margin: 0 0 19px;
     color: #777;
     font-size: 25px;
@@ -170,6 +164,7 @@ a {
     padding: 80px 0;
     border-top: 1px solid #EEE;
     text-align: center;
+    background: #f9f9f9;
 }
 
 .testimonial blockquote {
@@ -181,6 +176,7 @@ a {
 
 .testimonial blockquote p {
     margin: 0;
+    font-weight: 300;
 }
 
 .testimonial blockquote cite {
@@ -202,20 +198,20 @@ a {
 
 .hire {
     padding: 80px 0;
-    background-color: #f9f9f9;
+    background-color: transparent;
     border-top: 1px solid #eee;
     text-align: center;
 }
 
 .hire h3 {
     margin: 0;
-    color: #777;
+    color: #333;
     font-size: 25px;
     font-weight: 400;
 }
 
 .hire h3 a {
-    color: #00c09e;
+    color: #fff;
     text-decoration: underline;
 }
 
@@ -239,6 +235,10 @@ footer p {
 .made {
     float: right;
 }
+.made a{
+   color: #ababab; 
+}
+
 
 /* ANIMATIONS */
 a, div, path {
@@ -252,15 +252,19 @@ a, div, path {
  /*MEDIA QUERIES */
 
  @media screen and (max-device-width : 320px) {
-    .opl {
-        position: absolute;
+    body{
+        background: #f9f9f9;
     }
-
+    .first-section a {
+        color: #00c09e;
+    }
     .tile {
         width: 240px;
         height: 240px;
     }
-
+    .hire h3 a {
+        color: #00c09e;
+    }
     footer p {
         text-align: center;
     }
